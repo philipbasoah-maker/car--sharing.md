@@ -1,5 +1,3 @@
-# LAB 02 – Car-Share Story Map
-
 ## 1. 2D Story Map
 
 ```mermaid
@@ -15,13 +13,13 @@ flowchart TB
 
     B --> B1["MVP: Search Available Cars"]
     B --> B2["MVP: View Car Details"]
-    B --> B3["Release 2: Filter by Location/Price"]
+    B --> B3["Release 2: Filter by Location or Price"]
     B --> B4["Release 2: View Owner Information"]
     B --> B5["Release 3: Save Favorite Cars"]
     B --> B6["Release 3: View Availability Calendar"]
 
-    C --> C1["MVP: Select Car & Request Booking"]
-    C --> C2["MVP: Choose Date/Time"]
+    C --> C1["MVP: Select Car and Request Booking"]
+    C --> C2["MVP: Choose Date and Time"]
     C --> C3["Release 2: Booking Confirmation"]
     C --> C4["Release 2: Cancel Booking"]
     C --> C5["Release 3: Modify Booking"]
@@ -31,7 +29,7 @@ flowchart TB
     D --> D2["MVP: Pick Up Car"]
     D --> D3["Release 2: View Trip Details"]
     D --> D4["Release 2: Contact Owner"]
-    D --> D5["Release 3: Digital Key/Access"]
+    D --> D5["Release 3: Digital Key or Access"]
     D --> D6["Release 3: Trip Tracking"]
 
     E --> E1["MVP: Confirm Return"]
@@ -43,14 +41,17 @@ flowchart TB
 
     F --> F1["MVP: Pay for Rental"]
     F --> F2["MVP: View Receipt"]
-    F --> F3["Release 2: Rate Car/Owner"]
+    F --> F3["Release 2: Rate Car or Owner"]
     F --> F4["Release 2: Rate Renter"]
     F --> F5["Release 3: Dispute Payment"]
-    F --> F6["Release 3: Loyalty/Rewards"]
-## 3. Walking Skeleton MVP
+    F --> F6["Release 3: Loyalty and Rewards"]
+```
+
+## 2. Walking Skeleton
 
 ```mermaid
-flowchart TD
+flowchart LR
+
     A([Start]) --> B[Search Available Cars]
     B --> C[View Car Details]
     C --> D[Select Date and Time]
@@ -62,4 +63,8 @@ flowchart TD
     I --> J[Make Payment]
     J --> K[Booking Completed]
     K --> L([End])
+```
 
+### Core Flow
+
+**Search → Select → Book → Pick Up → Use → Return → Pay → Complete**
